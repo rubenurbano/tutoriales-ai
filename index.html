@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutoriales AI — Rubén Sbarsky</title>
+<style>
+  :root {
+    --bg: #0b0f19;
+    --card: #141b2d;
+    --accent: #6ea8fe;
+    --accent2: #22c55e;
+    --text: #e8ecf4;
+    --muted: #9aa4b8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #182238, var(--bg) 70%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1.5rem;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.25rem;
+    text-align: center;
+  }
+  .author {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .desc {
+    color: var(--muted);
+    max-width: 640px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  h2.group-title {
+    width: 100%;
+    max-width: 900px;
+    font-size: 1.1rem;
+    color: var(--text);
+    border-bottom: 1px solid #232d45;
+    padding-bottom: 0.5rem;
+    margin: 2.5rem 0 1.25rem;
+  }
+  .group-title:first-of-type { margin-top: 0; }
+  .grid {
+    display: grid;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 900px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+  a.card {
+    background: var(--card);
+    border: 1px solid #232d45;
+    border-radius: 16px;
+    padding: 1.75rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  a.card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+  .card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .tag {
+    align-self: flex-start;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .tag.tutorial { color: var(--accent2); }
+  .tag.proyecto { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <h1>Tutoriales AI</h1>
+  <p class="author">By: Ruben Sbarsky</p>
+  <p class="desc">Tutoriales, herramientas y proyectos de inteligencia artificial y programación. Los tutoriales publicados tienen web propia; los proyectos y herramientas enlazan directamente a su repositorio en GitHub.</p>
+
+  <h2 class="group-title">📘 Tutoriales publicados</h2>
+  <div class="grid">
+    <a class="card" href="https://rubenurbano.github.io/openchamber/">
+      <span class="tag tutorial">Tutorial</span>
+      <h3>OpenChamber</h3>
+      <p>Tutorial interactivo by Rubén Sbarsky.</p>
+    </a>
+
+    <a class="card" href="https://rubenurbano.github.io/hermes-agent-manual/">
+      <span class="tag tutorial">Tutorial</span>
+      <h3>Hermes Agent — Manual</h3>
+      <p>Manual interactivo de Hermes Agent by Rubén Sbarsky.</p>
+    </a>
+
+    <a class="card" href="https://rubenurbano.github.io/deepseek-harness-2026/">
+      <span class="tag tutorial">Tutorial</span>
+      <h3>DeepSeek Harness 2026</h3>
+      <p>Tutorial interactivo by Rubén Sbarsky.</p>
+    </a>
+
+    <a class="card" href="https://rubenurbano.github.io/cv-invencible-ia/">
+      <span class="tag tutorial">Tutorial</span>
+      <h3>CV Invencible IA</h3>
+      <p>Tutorial interactivo by Rubén Sbarsky.</p>
+    </a>
+  </div>
+
+  <h2 class="group-title">🛠️ Proyectos y herramientas</h2>
+  <div class="grid">
+    <a class="card" href="https://github.com/rubenurbano/Odysseus">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>Odysseus AI Workspace</h3>
+      <p>Instalación en Windows 11 con DeepSeek V4 Pro y Docker.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/AionUI-Troubleshooting">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>AionUI Troubleshooting</h3>
+      <p>Tutorial de actualización y configuración de AionUI con DeepSeek.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/Hermes-Bridge-Mobile">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>Hermes Bridge Mobile</h3>
+      <p>Puente móvil para Hermes Agent CLI: chat y subida de archivos desde el navegador.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/Hermes-Bridge">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>Hermes Bridge</h3>
+      <p>Servidor puente y dashboard para Hermes Agent.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/Hermes-Config">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>Hermes Config</h3>
+      <p>Configuración de Hermes Agent by Rubén Sbarsky.</p>
+    </a>
+
+    <a class="card" href="https://notebooklmexportkit.linknows.fun">
+      <span class="tag proyecto">App</span>
+      <h3>NotebookLM ExportKit</h3>
+      <p>Exporta contenido de NotebookLM a cualquier formato, con entrega a Google Drive y Notion.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/notebooklm-connect">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>NotebookLM Connect</h3>
+      <p>Proyecto Freebuff: NotebookLM Connect.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/hello-ai-app">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>Hello AI App</h3>
+      <p>App de pruebas de inteligencia artificial.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/TUI-Editor">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>TUI Editor</h3>
+      <p>Editor de texto TUI en terminal con curses by Rubén Sbarsky.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/MiBibliotecaPython">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>Mi Biblioteca Python</h3>
+      <p>Biblioteca de utilidades Python by Rubén Sbarsky.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/MAPA_MENTAL">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>Mapa Mental</h3>
+      <p>Mapa mental animado e interactivo by Rubén Sbarsky.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/sendpulse-tutorial-app">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>SendPulse Tutorial App</h3>
+      <p>Guía de chatbot de WhatsApp con IA (SendPulse), app en React.</p>
+    </a>
+
+    <a class="card" href="https://github.com/rubenurbano/PRO-LIMP-AUTOMATIZACION-TUTORIALES-HIPERTEX">
+      <span class="tag proyecto">Repositorio</span>
+      <h3>Automatización Hipertex</h3>
+      <p>Catálogo de tutoriales de automatización e IA: ChatGPT, Claude, N8N, NotebookLM y más.</p>
+    </a>
+  </div>
+
+  <footer>
+    <p>📚 Tutorial solo con fines Educativos y de Divulgación</p>
+    <p>👨‍💻 Créditos: Rubén Sbarsky</p>
+  </footer>
+</body>
+</html>
